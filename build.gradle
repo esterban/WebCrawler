@@ -2,12 +2,19 @@ plugins {
     id 'java'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 group 'org.srwit'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
+
 dependencies {
     compile 'junit:junit:4.12'
 }
