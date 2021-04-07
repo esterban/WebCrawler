@@ -15,7 +15,7 @@ public class WebSpider {
     private static final Logger LOG = LogManager.getLogger();
 
     private int debugPageCount = 0;
-    private final static int debugMaxPageCounter = 3;
+    private final static int debugMaxPageCounter = 100;
     private final IURLNormaliser urlNormaliser;
     private final Set<String> knownInternalPages = new HashSet<>();
     private final WebPageGetter webPageGetter;
