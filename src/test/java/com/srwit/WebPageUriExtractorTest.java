@@ -24,7 +24,7 @@ public class WebPageUriExtractorTest {
     WebPageGetter mockWebPageGetter;
 
     @Test
-    public void test1() throws IOException {
+    public void testPageFromBBCWebsite() throws IOException {
         InputStream htmlStream = this.getClass().getClassLoader().getResourceAsStream("scratch_1.html");
         @SuppressWarnings("ConstantConditions") String htmlString = IOUtils.toString(htmlStream, StandardCharsets.UTF_8);
 
