@@ -16,5 +16,13 @@ repositories {
 }
 
 dependencies {
-    compile 'junit:junit:4.12'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+    compile 'commons-io:commons-io:2.5'
+    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.1'
+    compile 'org.jsoup:jsoup:1.13.1'
+    compile 'com.google.code.gson:gson:2.8.2'
+
+    testCompile 'org.junit.jupiter:junit-jupiter:5.7.1'
+    testCompile 'org.mockito:mockito-junit-jupiter:3.8.0'
 }
