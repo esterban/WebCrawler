@@ -1,6 +1,7 @@
 package com.srwit;
 
 import com.fasterxml.jackson.databind.ObjectWriter;
+import com.srwit.walker.WebSpider;
 import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

@@ -33,12 +33,16 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.google.code.gson:gson:2.8.2'
 
-    testCompileOnly 'org.junit.jupiter:junit-jupiter:5.7.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.4.5'
+
+
     testCompileOnly 'org.mockito:mockito-junit-jupiter:3.8.0'
+    testCompileOnly 'org.junit.jupiter:junit-jupiter:5.7.1'
 
     testImplementation 'org.mockito:mockito-junit-jupiter:3.8.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
 
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.4.5'
 }
 
 test {

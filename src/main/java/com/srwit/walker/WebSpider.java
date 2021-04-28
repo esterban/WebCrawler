@@ -1,7 +1,10 @@
-package com.srwit;
+package com.srwit.walker;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import com.srwit.IURLNormaliser;
+import com.srwit.WebPageGetter;
+import com.srwit.WebPageUriExtractor;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,7 +18,7 @@ public class WebSpider {
     private static final Logger LOG = LogManager.getLogger();
 
     private int debugPageCount = 0;
-    private final static int debugMaxPageCounter = 100;
+    private final static int debugMaxPageCounter = 1;
     private final IURLNormaliser urlNormaliser;
     private final Set<String> knownInternalPages = new HashSet<>();
     private final WebPageGetter webPageGetter;
@@ -33,7 +36,8 @@ public class WebSpider {
 
     public void processUri(URI uri) {
         if (debugPageCount >= debugMaxPageCounter) {
-            System.exit(0);
+//            System.exit(0);
+            return;
         }
 
         ++debugPageCount;
